@@ -20,3 +20,7 @@ export XDG_CONFIG_DIRS=/etc/xdg/xdg-Lubuntu:/etc/xdg\\n\
 EXPOSE 3389
 
 CMD service xrdp start ; bash 
+
+
+
+ docker run -it -d --name=mydesktop -p 3390:3389 --shm-size=4g dockerlubuntudesktop:rdp
